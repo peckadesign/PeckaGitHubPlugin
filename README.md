@@ -2,7 +2,7 @@
 Plugin, který z GitHub úkolu parsuje důležité odkazy do speciálního okna
 
 ## Instalace pro Google chrome
-- Stáhnout poslední zabalený release
+- Stáhnout poslední zabalený release (`PeckaGithubPlugin.zip`)
 - Rozbalit archiv
 - Přejít na `chrome://extensions/`
 - Aktivovat režim pro vývojáře
