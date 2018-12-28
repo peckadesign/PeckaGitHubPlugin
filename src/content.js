@@ -56,7 +56,15 @@ setTimeout(function () {
             }
 
             if (testAddress) {
-                prContainer.append(createListItem('- K testování na ' + testAddress));
+                if (testAddress.indexOf('Nay2014') !== -1) {
+                    var ewTestAddress = testAddress.replace('Nay2014', 'Electroworld2015');
+                    prContainer.append(
+                        createListItem('- K testování na <br/>&nbsp;&nbsp;&nbsp; - ' + testAddress + '<br/>&nbsp;&nbsp;&nbsp; - ' + ewTestAddress)
+                    );
+                } else {
+                    prContainer.append(createListItem('- K testování na ' + testAddress));
+                }
+
             }
 
             $content.append(prContainer);
