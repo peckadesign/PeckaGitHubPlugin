@@ -107,7 +107,13 @@ setTimeout(function () {
                 if (PRpdproject)
                     prContainer.append(createListItem('<a href="' + PRpdproject + '">PR základ</a>'));
                 if (testServer)
-                    prContainer.append(createListItem('<a href="' + testServer + '">Test</a>'));
+                    if (testServer.indexOf('nay2014') !== -1) {
+                        prContainer.append(createListItem('<a href="' + testServer + '">Test Nay</a>'));
+                        prContainer.append(createListItem('<a href="' + testServer.replace('nay2014', 'electroworld2015') + '">Test EW</a>'));
+                    } else {
+                        prContainer.append(createListItem('<a href="' + testServer + '">Test</a>'));
+                    }
+
 
                 $content.append(prContainer);
             });
