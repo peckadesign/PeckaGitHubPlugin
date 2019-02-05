@@ -45,7 +45,7 @@ setTimeout(function () {
             var project = $('.container.repohead-details-container strong a').text();
             var PRLabel = project === 'pdproject5' ? 'základ' : 'projekt';
             var testAddress = $('.merge-status-item:contains("Pecka CI / Testovací server")').find('a.status-actions').attr("href");
-            var branch = $(".commit-ref.head-ref").text();
+            var branch = $(".commit-ref.head-ref").first().text();
 
             if (branch) {
                 prContainer.append(createListItem('- hotovo ve větvi `' + branch + '`'));
