@@ -1,13 +1,13 @@
 {
   "manifest_version": 2,
   "name": "PeckaGitHubPlugin",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "PeckaGitHubPlugin",
 
   "content_scripts": [{
     "css": ["style.css"],
     "js": ["jquery.min.js", "content.js"],
-    "matches": ["https://github.com/*"]
+    "matches": ["https://github.com/peckadesign/*/pull/*","https://github.com/peckadesign/*/issues/*"]
   }],
   "background":
   {

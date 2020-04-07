@@ -89,7 +89,7 @@ setTimeout(function () {
                 $content.append(prContainer);
             }
 
-            var commentsWithPR = $('.timeline-comment-wrapper:contains("PR projekt")');
+            var commentsWithPR = $('.TimelineItem:contains("PR projekt")');
 
             $.each(commentsWithPR, function (i, val) {
                 var prContainer = $('<div class="pr-container"></div>');
@@ -128,7 +128,7 @@ setTimeout(function () {
         }
 
         function findPageLink(pagename) {
-            return $('.timeline-comment-wrapper').first().find('strong:contains(' + pagename + ')').children("a").first().attr("href");
+            return $('.TimelineItem').first().find('strong:contains(' + pagename + ')').children("a").first().attr("href");
         }
     });
 }, 500);
