@@ -61,6 +61,11 @@ setTimeout(function () {
                     prContainer.append(
                         createListItem('- K testování na <br/>&nbsp;&nbsp;&nbsp; - ' + testAddress + '<br/>&nbsp;&nbsp;&nbsp; - ' + ewTestAddress)
                     );
+                } else if (testAddress.indexOf('megapixel2012') !== -1) {
+                    var novyTestAddress = testAddress.replace('megapixel2012', 'megapixel2012-novy');
+                    prContainer.append(
+                        createListItem('- K testování na <br/>&nbsp;&nbsp;&nbsp; - ' + testAddress + '<br/>&nbsp;&nbsp;&nbsp; - ' + novyTestAddress)
+                    );                   
                 } else {
                     prContainer.append(createListItem('- K testování na ' + testAddress));
                 }
